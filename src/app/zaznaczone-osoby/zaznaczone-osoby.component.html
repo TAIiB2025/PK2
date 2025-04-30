@@ -1,0 +1,10 @@
+<hr>
+<p>Zaznaczone osoby:</p>
+<ol>
+    <li *ngFor="let osoba of (zaznaczoneOsoby$ | async)">
+        <!-- {{osoba.imie}} {{osoba.nazwisko}} -->
+        {{osoba | parserOsoby:' / '}}
+        <button (click)="odznacz(osoba)">Odznacz</button>
+    </li>
+</ol>
+<hr>

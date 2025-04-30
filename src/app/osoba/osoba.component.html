@@ -22,4 +22,16 @@
             (click)="onZmianaWyroznieniaClick()">
         {{osoba.czyWyrozniona ? 'Odepnij' : 'Wyróżnij'}}
     </button>
+
+    <button *ngIf="!czyZaznaczona"
+            (click)="zaznacz()"
+            [ngStyle]="{ 'margin-left': '1rem' }">
+        Zaznacz
+    </button>
+
+    <button *ngIf="czyZaznaczona"
+            (click)="odznacz()"
+            [ngStyle]="{ 'margin-left': '1rem' }">
+        Odznacz
+    </button>
 </div>
