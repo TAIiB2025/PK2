@@ -1,0 +1,12 @@
+@if(osoba != null) {
+    <div>
+        <p>Id: {{osoba.id}}</p>
+        <p>Imię: {{osoba.imie}}</p>
+        <p>Naziwsko: {{osoba.nazwisko}}</p>
+        <p>Wiek: {{osoba.wiek}}</p>
+        <p>Czy wyróżniona: {{osoba.czyWyrozniona ? 'Tak' : 'Nie'}}</p>
+        <a routerLink="form">Przejdź do edycji</a>
+    </div>
+} @else {
+    <p>Wczytywanie...</p>
+}
