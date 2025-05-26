@@ -10,7 +10,7 @@ import { OsobyService } from '../osoby.service';
   selector: 'app-osoby',
   imports: [ZaznaczoneOsobyComponent, OsobaComponent, LicznikComponent, CommonModule],
   templateUrl: './osoby.component.html',
-  styleUrl: './osoby.component.css'
+  styleUrl: './osoby.component.css',
 })
 export class OsobyComponent {
   private readonly osobyService = inject(OsobyService);
